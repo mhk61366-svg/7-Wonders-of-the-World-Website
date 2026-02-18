@@ -1,0 +1,301 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: #F4F1EC ;
+}
+.container{
+width: 100%;
+margin: auto;
+}
+h1, h2, h3, h4{
+    font-weight:700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    color: #1F2933;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4.2rem;
+}
+h3{
+    font-size: 3.6rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+p{
+font-weight:400;
+line-height: 1.5;
+font-size: 2.0rem;
+color: #1F2933;
+}
+a{
+font-weight:400;
+text-decoration:none;
+line-height: 1.5;
+font-size: 1.6rem;
+display:inline-block;
+color: blue;
+}
+ul{
+list-style: none;
+color: #1F2933;
+}
+.logo{
+    width: 12rem;
+    height: auto;
+}
+nav{
+background-color: #FAFAF8;
+border-bottom: 1px solid #E5E7EB;
+}
+.nav-menu{
+    margin: 0rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-part1{
+display: flex;
+gap: 1.5rem;
+}
+.Hero-section::before{
+background: rgba(0, 0, 0, 0.35);
+}
+.dropdown{
+position: relative;
+}
+.dropdown-menu{
+position: absolute;
+visibility: hidden;
+padding: 1rem 2rem;
+min-width: 220px;
+box-shadow: 0 20px 30px rgba(0,0,0,0.15); 
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.3s ease;
+z-index: 1000;
+}
+.dropdown:hover .dropdown-menu{
+opacity: 1;
+visibility: visible;
+transform: translateY(35px);
+}
+.Hero-section{
+min-height: 100vh;
+max-width: 200rem;
+background-image: url("landingpage_images/taj mahal bg2.jpg");
+background-position: center 30%;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #4B6966;
+}
+.Feature-section{
+margin: 30rem 0.3rem;
+}
+.feature-heading{
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.grid-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+.Wonder-card{
+background-color: #FFFFFF;
+margin: 2rem;
+width: 25rem;
+height: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+border-radius: 2rem;
+border: 4px solid #5F7C78;
+transition: transform 0.3s ease-in, box-shadow 0s ease;
+}
+.Wonder-card:hover, .Wonder-card:active{
+transform: scale(1.08);
+box-shadow: 5px 15px 30px black;
+}
+.card-image{
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.traverse-card{
+    background-color: grey;
+    color: aliceblue;
+    font-size: 2.6rem ;
+}
+.CTA-section{
+margin: 25rem 0rem;
+}
+
+.cta-img{
+width: 100%;
+max-width: 500px;
+height: auto;
+}
+.CTA-card{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10rem;
+padding: 8rem 0rem;
+background-color:  #CFE3DF;
+}
+.CTA-subcard{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.5rem;
+}
+.contact-detail{
+margin: 2.5rem 0rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2.5rem;
+}
+footer{
+text-align: center;
+padding-top: 8rem;
+margin-top: 10rem;
+padding-bottom: 3rem;
+background-color: #1F2933;
+
+}
+footer h2{
+color: white;
+}
+footer a:hover {
+    color: #C9A24D;
+  }
+
+.btn{
+font-size: 1.6rem;
+font-weight: 400;
+padding: 1rem 2rem;
+border-radius: 8px;
+}
+.btn-primary:link, .btn-primary:visited{
+background-color: #1E40AF;
+color: white;
+border: 2px solid #1E40AF;
+transition: background-color 0.25s ease, transform 0.15s ease;
+}
+.btn-primary:hover, .btn-primary:active{
+background-color: #162E8A;
+color: white;
+border: 2px solid #162E8A;
+transform: scale(1.05);
+
+}
+.btn-secondry:link, .btn-secondry:visited{
+background-color: white;
+color: #1E40AF;
+border: 2px solid #162E8A;
+transition: transform 0.15s ease;
+}
+.btn-secondry:hover, .btn-secondry:active{
+background-color: white;
+color: #162E8A;
+border: 2px solid #162E8A;
+transform: scale(1.05);
+
+}
+.btn-primary:focus-visible {
+    outline: 3px solid #C9A24D; /* gold accent */
+    outline-offset: 2px;
+  }
+.social-icon{
+width: 50px;
+height: auto;
+}
+
+@media(max-width: 62.5rem){
+html{
+font-size: 50%;
+}
+..Hero-section::before{
+background: rgba(0, 0, 0, 0.55);
+}
+    
+}
+@media(max-width: 48rem){
+html{
+font-size: 37.5%;
+}
+.container{
+width: 100%;
+margin: 0 auto;
+}
+.Hero-section{
+    background-image: url("special-hero.jpg");
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.Feature-section{
+margin: 18rem 0rem;
+}
+.grid-container{
+gap: 1.2rem;
+}
+.CTA-card{
+flex-direction: column-reverse;
+text-align: center;
+}
+.social-icon{
+width: 30px;
+height: auto;
+}
+}
+
+@media(max-width: 38rem){
+html{
+font-size: 28%%;
+}
+h3{
+font-size: large;
+}
+.Hero-section{
+text-align: center;
+}
+.Feature-section{
+margin: 12rem 0rem;
+}
+.CTA-section{
+margin: 20rem 0rem;
+}
+.btn{
+padding: 0.75rem 1.5rem;
+border-radius: 6px;
+}
+.social-icon{
+width: 25px;
+height: auto;
+}
+}
