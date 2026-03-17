@@ -90,7 +90,7 @@ ul{
     text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
 }
 .Blog-section{
-    margin: 25rem 0rem;
+    margin: 50rem 0rem;
     text-indent: 2rem;
 }
 .Blog-card{
@@ -154,3 +154,95 @@ footer a:hover {
     transform: scale(1.05);
 }
 
+@media(max-width: 62.5rem){
+    html{
+        font-size: 62.5%;
+    }
+    h2{
+        font-size: 3.8rem;
+        text-align: center;
+    }
+    .Blog-card-img{
+        margin: 35rem 0rem;
+    }
+    .Blog-sub-card{
+        flex-direction: column;
+    }
+    .Hero-section-img{
+        width: 40rem;
+        height: 30rem;
+    }
+}
+
+@media(max-width: 48rem) {
+    h1, h2, h3, h4{
+        line-height: 1.1;
+        letter-spacing: -1.6px;
+    }
+    h1{
+        font-size: 3.4rem;
+    }
+    h2{
+        font-size: 3.2rem;
+    }
+    .Hero-section-img{
+        width: 30rem;
+        height: 20rem;
+    }
+    .Blog-card{
+        margin: 25rem 3rem;
+    }
+    .social-icon{
+        width: 40px;
+        height: auto;
+        }
+}
+
+@media(max-width: 40rem){
+    html{
+        font-size: 50%;
+    }
+    .Hero-flexcard{
+        gap: 2rem;
+    }
+    .Blog-section{
+        margin: 30rem 0rem;
+    }
+    .Blog-card-img{
+        max-width: 400px;
+    }
+    .btn{
+    font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 30.625rem){
+    h1{
+        text-align: center;
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+    .Hero-flexcard{
+        gap: 1rem;
+    }
+    .Hero-section-img{
+        width: 22rem;
+        height: 15rem;
+    }
+    .Blog-section{
+        margin: 30rem 0rem;
+    }
+    .Blog-card-img{
+        max-width: 320px;
+    }
+    .btn{
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 6px;
+    }
+    .social-icon{
+        width: 25px;
+    }
+}
