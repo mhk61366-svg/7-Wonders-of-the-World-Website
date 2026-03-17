@@ -248,7 +248,7 @@ width: 100%;
 margin: 0 auto;
 }
 .Hero-section{
-    background-image: url("special-hero.jpg");
+    background-image: url("landingpage_images/special-hero.jpg");
     position: relative;
     min-height: 100vh;
     display: flex;
