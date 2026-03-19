@@ -163,7 +163,7 @@ footer a:hover {
         text-align: center;
     }
     .Blog-card-img{
-        margin: 35rem 0rem;
+        margin: 5rem 0rem;
     }
     .Blog-sub-card{
         flex-direction: column;
@@ -210,6 +210,7 @@ footer a:hover {
     }
     .Blog-card-img{
         max-width: 400px;
+        margin: 3rem 0rem;
     }
     .btn{
     font-size: 1.2rem;
@@ -238,10 +239,11 @@ footer a:hover {
         max-width: 320px;
     }
     .btn{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0.75rem 1.5rem;
         border-radius: 6px;
     }
+
     .social-icon{
         width: 25px;
     }
