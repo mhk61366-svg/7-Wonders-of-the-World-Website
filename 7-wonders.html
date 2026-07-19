@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="Images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="wonders_style.css">
     <title>7 Wonders of the World</title>
+    <script>document.documentElement.classList.add('js-enabled');</script>
 </head>
 <body>
+    <div id="scroll-progress"></div>
     <div class="Container">
     <section class="header-section">
     <nav class="nav-menu">
@@ -25,7 +30,7 @@
         <img src="Images/Hero-img1.jpg" alt="Hero-img" class="Hero-section-img">
         <img src="Images/Hero-img3.jpg" alt="Hero-img" class="Hero-section-img">
     </div>
-        <h1>Unveiling the World’s Greatest Marvels</h1>
+        <h1>Unveiling the World's Greatest Marvels</h1>
         <div class="Hero-flexcard">
         <img src="Images/Hero-ig4.jpg" alt="Hero-img" class="Hero-section-img">
         <img src="Images/Hero-img5.jpg" alt="Hero-img" class="Hero-section-img">
@@ -37,6 +42,7 @@
 <section id="blogs" class="Blog-section">
 
     <div id="great-wall" class="Blog-card">
+        <span class="blog-numeral">I</span>
         <h2>🏯 The Great Wall of China: The Dragon That Guards a Civilization</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/great-wall.jpg" alt="great-wall">
@@ -67,6 +73,7 @@
     </div>
 
     <div id="petra" class="Blog-card">
+        <span class="blog-numeral">II</span>
         <h2>Petra: The Rose-Red City Carved in Stone – A Timeless Wonder of the World</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/Petra.jpg" alt="petra">
@@ -109,6 +116,7 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 
 
     <div id="christ" class="Blog-card">
+        <span class="blog-numeral">III</span>
         <h2>Christ the Redeemer: The Iconic Guardian of Rio de Janeiro</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/christ-the-redeemer.jpg" alt="christ">
@@ -134,6 +142,7 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 
 
     <div id="machu-pichu" class="Blog-card">
+        <span class="blog-numeral">IV</span>
         <h2>Machu Picchu: The Lost City of the Incas in the Clouds</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/machu-pichu.jpg" alt="machu">
@@ -160,6 +169,7 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 
 
     <div id="chichen-itza" class="Blog-card">
+        <span class="blog-numeral">V</span>
         <h2>Chichén Itzá: The Majestic Pyramid City of the Maya</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/chichen-Itza.jpg" alt="chichen">
@@ -185,6 +195,7 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 
 
     <div id="Colosseum" class="Blog-card">
+        <span class="blog-numeral">VI</span>
         <h2>The Colosseum: Rome’s Legendary Arena of Gladiators</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/Collosuem.jpg" alt="Colossuem">
@@ -215,7 +226,8 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 
 
     <div id="taj-mahal" class="Blog-card">
-        <h2>The Taj Mahal: India’s Eternal Monument of Love</h2>.
+        <span class="blog-numeral">VII</span>
+        <h2>The Taj Mahal: India’s Eternal Monument of Love</h2>
         <div class="Blog-sub-card">
         <img class="Blog-card-img" src="Images/taj-mahal.jpg" alt="taj-mahal">
         <p>
@@ -254,6 +266,7 @@ What makes Petra truly unique is the way its architecture blends natural rock fo
 </footer>
 
 </div>
-
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="wonders_script.js"></script>
 </body>
 </html>
